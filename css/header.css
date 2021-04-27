@@ -1,0 +1,225 @@
+header {
+  width: 100%;
+  height: 48px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+header ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  header ul {
+    width: 1024px;
+  }
+}
+
+.search-icon-container {
+  display: none;
+}
+
+.menu-icon-cont,
+.apple-logo-cont, 
+.shopping-bag-icon-cont {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.shopping-bag-icon-cont img {
+  width: 18px;
+}
+
+.menu-icon-cont:hover,
+.apple-logo-cont:hover, 
+.shopping-bag-icon-cont:hover {
+  opacity: 1;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  cursor: pointer;
+}
+
+.menu-item-container {
+  display: none;
+}
+
+.bi-list {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.apple-logo-cont img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 736px) {
+  .menu-icon-cont {
+    display: none;
+  }
+  
+  .search-icon-container {
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+
+  .search-icon-container:hover,
+  .menu-item-container:hover {
+    opacity: 1;
+    transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    cursor: pointer;
+  }
+
+  .menu-item-container {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    opacity: 0.8;
+    transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .menu-item {
+    color: white; 
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .menu-item-active {
+    opacity: 0.6;
+  }
+}
+
+
+
+.content-header-ipodtouch {
+  height: 48px;
+  width: 100%;
+  border-bottom: 1px solid rgb(216,212,212);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, .78);
+  -webkit-backdrop-filter: blur(23px);
+  backdrop-filter: blur(23px);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+}
+
+.content-header-ipodtouch ul {
+  height: 100%;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .content-header-ipodtouch ul {
+    width: 1024px;
+  }
+}
+
+.content-header-title {
+  font-size: 19px;
+  text-decoration: none;
+  color: #000;
+}
+
+.content-header-actions, .content-header-title {
+  flex: 1;
+}
+
+.content-header-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.chevron-down-cont {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.chevron-hover-box:hover,
+.bi-chevron-down:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.bi-chevron-down {
+  position: absolute;
+  z-index: 3;
+}
+
+.content-header-links {
+  display: none;
+  font-size: 12px;
+}
+
+.content-header-links a {
+  margin-left: 24px;
+  font-weight: 300;
+}
+
+button.buy {
+  background-color: var(--accent-button);
+  border-style: none;
+  width: 45px;
+  height: 24px;
+  font-size: 12px;
+  color: white;
+  border-radius: 12px;
+}
+
+button.buy:hover {
+  cursor: pointer;
+  background-color: var(--accent-button-hover);
+}
+
+.chevron-hover-box {
+  height: 30px;
+  width: 40px;
+  position: relative;
+  top: 3px;
+}
+
+@media screen and (min-width: 736px) {
+  .content-header-links {
+    display: inline;
+  }
+
+  .chevron-down-cont {
+    display: none;
+  }
+
+  button.buy {
+    margin-left: 24px;
+  }
+}

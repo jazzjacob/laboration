@@ -1,0 +1,11 @@
+:root {
+  --lightest-grey: #d2d2d7;
+  --medium-grey: #86868b;
+  --darker-grey: #515154;
+  --almost-black: #1d1d1f;
+
+  --accent-button: #0071e3;
+  --accent-button-hover: #137ce5;
+  --accent: #0070c9;
+  --accent-footer: #0166cc;
+}

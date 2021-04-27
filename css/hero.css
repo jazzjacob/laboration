@@ -1,0 +1,110 @@
+.hero {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 24px;
+  margin-bottom: 9px;
+  font-weight: normal;
+}
+
+.hero h2 {
+  font-size: 48px;
+  padding: 0 16px;
+  line-height: 52px;
+}
+
+.hero p {
+  font-size: 21px;
+  margin-top: 30px;
+  color: #333;
+  font-weight: 300;
+}
+
+.hero .image-container {
+  margin-top: 80px;
+  object-fit: contain;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .image-hero {
+  width: 414px;
+  height: 150px;
+  background-image: url(../images/ipods-hero-small.jpg);
+  background-size: 414px 150px;
+  display: block;
+  position: absolute;
+}
+
+
+@media screen and (min-width: 736px) {
+  .hero {
+    padding: 120px 0;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero h2 {
+    font-size: 68px;
+    padding: 0;
+    line-height: 68px;
+  }
+
+  .hero p {
+    margin-top: 40px;
+  }
+
+  .hero .image-container {
+    height: 367px;
+  }
+  
+  .hero .image-hero {
+    width: 886px;
+    height: 367px;
+    background-image: url(../images/ipods-hero-medium.jpg);
+    background-size: 886px 367px;
+  }
+}
+
+@media screen and (min-width: 1069px) {
+  .hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+
+  .hero h2 {
+    font-size: 80px;
+    padding: 0;
+    line-height: 84px;
+  }
+
+  .hero p {
+    font-size: 24px;
+  }
+
+  .hero .image-container {
+    height: 510px;
+    margin-top: 100px;
+  }
+  
+  .hero .image-hero {
+    width: 1230px;
+    height: 510px;
+    background-image: url(../images/ipods-hero-large.jpg);
+    background-size: 1230px 510px;
+  }
+
+}

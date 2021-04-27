@@ -1,0 +1,141 @@
+.music {
+  width: 100%;
+  background-color: #fafafa;
+  padding-top: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.music-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music .headline, .music .intro {
+  width: 85%;
+}
+
+.headline {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 0 16px;
+}
+
+.intro {
+  line-height: 27px;
+  margin-top: 15px;
+  color: #515151;
+  font-size: 18px;
+}
+
+.intro .sup {
+  text-decoration: none;
+  color: inherit;
+}
+
+.intro .sup:hover {
+  color: var(--accent);
+}
+
+.learn-more {
+  margin-top: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+.learn-more .bi-chevron-right {
+  font-size: 14px;
+  padding-left: 2px;
+}
+
+.music .image-container {
+  margin-top: 40px;
+  object-fit: contain;
+  height: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.image-container .image-music {
+  width: 735px;
+  height: 360px;
+  background-image: url(../images/music_hero.jpg);
+  background-size: 735px 360px;
+  display: block;
+  position: absolute;
+}
+
+
+@media screen and (min-width: 736px) {
+  .music {
+    padding-top: 120px;
+  }
+
+  .music-content {
+    width: 692px;
+  }
+
+  .headline {
+    font-size: 48px;
+  }
+
+  .intro {
+    line-height: 29px;
+    margin-top: 17px;
+    color: #515151;
+    font-size: 21px;
+  }
+
+  .learn-more {
+    font-size: 21px;
+  }
+
+  .music .image-container {
+    margin-top: 60px;
+    height: 558px;
+  }
+
+  .image-container .image-music {
+    width: 1037px;
+    height: 558px;
+    background-image: url(../images/music-hero-medium.jpg);
+    background-size: 1037px 558px;
+  }
+}
+
+
+@media screen and (min-width: 1069px) {
+  .music-content {
+    width: 692px;
+  }
+
+  .headline {
+    font-size: 64px;
+    line-height: 68px;
+  }
+
+  .music .image-container {
+    margin-top: 80px;
+    height: 775px;
+    width: 980px;
+  }
+
+  .image-container .image-music {
+    width: 1440px;
+    height: 775px;
+    background-image: url(../images/music-hero-large.jpg);
+    background-size: 1440px 775px;
+  }
+}
